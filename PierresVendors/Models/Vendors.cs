@@ -6,12 +6,16 @@ namespace PierresVendors.Models
   {
     public string Name {get;set;}
     public string Description {get;set;}
+    public int Id {get;set;}
     public static List<Vendor> Vendors = new List<Vendor> {};
 
     public Vendor(string name, string description)
     {
       Name = name;
       Description = description;
+      Vendors.Add(this);
+      Id = Vendors.Count;
+      List<Order> Orders = new List <Order>{};
     }
 
     public static List<Vendor> GetAll()

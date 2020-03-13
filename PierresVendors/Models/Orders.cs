@@ -1,9 +1,14 @@
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace PierresVendors.Models
 {
   public class Order
   {
-    
+    public string Name {get;set;}
+
+    public Order (string name)
+    {
+      Name = name;
+    }
   }
 }
