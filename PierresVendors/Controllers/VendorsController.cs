@@ -39,10 +39,11 @@ namespace PierresVendors.Controllers
     }
 
     [HttpPost("/vendors/{Id}/orders")]
-    public ActionResult New(int Id, string orderDescrpition)
+    public ActionResult New(int Id, string orderDescription)
     {
       Vendor selectedVendor = Vendor.Find(Id);
-      Order newOrders = new Order(orderDescrpition);
+      Order newOrder = new Order(orderDescription);
+      selectedVendor.AddOrder(newOrder);
       return RedirectToAction("Index");
     }
   }
