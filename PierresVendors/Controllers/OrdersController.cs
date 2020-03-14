@@ -7,6 +7,11 @@ namespace PierresVendors.Controllers
 {
   public class OrdersController : Controller
   {
+    [HttpGet("/vendors/{Id}/orders/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
 
    
   }

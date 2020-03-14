@@ -26,5 +26,17 @@ namespace PierresVendors.Controllers
     {
       return View();
     }
+
+    [HttpGet("/vendors/{Id}")]
+    public ActionResult Show(int Id)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor selectedVendor = Vendor.Find(Id);
+      List<Order> VendorOrders = selectedVendor.Orders;
+      Console.WriteLine(selectedVendor.Description);
+      model.Add("vendor", selectedVendor);
+      model.Add("orders", VendorOrders);
+      return View(model);
+    }
   }
 }

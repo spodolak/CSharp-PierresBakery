@@ -8,6 +8,7 @@ namespace PierresVendors.Models
     public string Description {get;set;}
     public int Id {get;set;}
     public static List<Vendor> Vendors = new List<Vendor> {};
+    public List<Order> Orders {get;set;}
 
     public Vendor(string name, string description)
     {
@@ -15,12 +16,17 @@ namespace PierresVendors.Models
       Description = description;
       Vendors.Add(this);
       Id = Vendors.Count;
-      List<Order> Orders = new List <Order>{};
+      Orders = new List <Order>{};
     }
 
     public static List<Vendor> GetAll()
     {
       return Vendors;
+    }
+
+    public static Vendor Find(int searchId)
+    {
+      return Vendors[searchId-1];
     }
   }
 }
