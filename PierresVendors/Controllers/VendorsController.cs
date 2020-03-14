@@ -33,10 +33,17 @@ namespace PierresVendors.Controllers
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor selectedVendor = Vendor.Find(Id);
       List<Order> VendorOrders = selectedVendor.Orders;
-      Console.WriteLine(selectedVendor.Description);
       model.Add("vendor", selectedVendor);
       model.Add("orders", VendorOrders);
       return View(model);
+    }
+
+    [HttpPost("/vendors/{Id}/orders")]
+    public ActionResult New(int Id, string orderDescrpition)
+    {
+      Vendor selectedVendor = Vendor.Find(Id);
+      Order newOrders = new Order(orderDescrpition);
+      return RedirectToAction("Index");
     }
   }
 }

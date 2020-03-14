@@ -8,11 +8,10 @@ namespace PierresVendors.Controllers
   public class OrdersController : Controller
   {
     [HttpGet("/vendors/{Id}/orders/new")]
-    public ActionResult New()
+    public ActionResult New(int Id)
     {
-      return View();
+      Vendor selectedVendor = Vendor.Find(Id);
+      return View(selectedVendor);
     }
-
-   
   }
 }
