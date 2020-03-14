@@ -1,4 +1,4 @@
-# _Word Counter_
+# _Pierre's Bakery_
 
 #### _Epicodus C# Independent Project_, _Mar. 13, 2020_
 #### A web application for a bakery (an exersize utilizing objects in objects)
@@ -6,7 +6,7 @@
 #### By _**Stephanie Podolak**_
 
 ## Description
-A program that gathers both a word and sentence from a user, then checks how frequently the word appears in the sentence. It should check for full word matches only. (For instance, if provided the word "cat" and sentence "I'm walking to the cathedral." the first three letters of the word cathedral would not be counted.)
+A program designed to keep track of large bakery orders. It intakes and displays information for multiple vendors and multiple orders per vendor.
 
 ## Specifications:
 
