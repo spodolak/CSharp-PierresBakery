@@ -1,4 +1,29 @@
 body {
-    color: white;
-    background-color: teal;
+	color: #241023;
+	background-color: #F7FFE0;
+	font-family: 'Amiri', serif;
+	text-align: center;
+}
+button {
+	background-color: #F0C987;
+	border: none;
+	padding: 15px 15px;
+	margin: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	}
+div#footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
+}
+img {
+	margin:50px;
+
 }
