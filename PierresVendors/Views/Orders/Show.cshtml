@@ -3,11 +3,11 @@
     Layout = "_Layout";
 }
 
-<h1>@Model.Title order details:</h1>
+<h1>order: @Model.Title</h1>
 
-<h4>@Model.Date</h4>
-<h4>@Model.Description</h4>
-<h4>@Model.Price</h4>
+<h4>delivery date:@Model.Date</h4>
+<h4>description:@Model.Description</h4>
+<h4>Total Due:$@Model.Price.00</h4>
 
 <button class="btn"><a href='/vendors/@Model.Id/orders/new'>add another order</a></button>
 <button class="btn"><a href='/vendors'>view all vendors</a></button>

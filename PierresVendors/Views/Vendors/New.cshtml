@@ -3,14 +3,15 @@
 }
 
 <h1>add a vendor</h1>
-
-<form action="/vendors" method="post">
-  <label for="vendorName">vendor name</label>
-  <input id="vendorName" name="vendorName" type="text">
-  <label for="vendorDescription">vendor description</label>
-  <input id="vendorDescription" name="vendorDescription" type="text">
-  <button type="submit"  class="btn">Add</button>
-</form>
+<div class="border">
+  <form action="/vendors" method="post">
+    <label for="vendorName">vendor name</label>
+    <input id="vendorName" name="vendorName" type="text"><br>
+    <label for="vendorDescription">vendor description</label>
+    <input id="vendorDescription" name="vendorDescription" type="text">
+    <button type="submit"  class="btn"><a>Add</a></button>
+  </form>
+</div>
 
 <button class="btn"><a href="/">home</a></button>
 <button  class="btn"><a href="/vendors">back to vendors.</a></button>
