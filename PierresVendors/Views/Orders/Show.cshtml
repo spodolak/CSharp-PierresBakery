@@ -1,6 +1,10 @@
-<h1>Vendor Order Details: </h1>
+@using PierresVendors.Models;
 
+<h1>@Model.Title Order Details:</h1>
 
+<h4>@Model.Date</h4>
+<h4>@Model.Description</h4>
+<h4>@Model.Price</h4>
 
-<a href='/vendors/@Model["category"].Id/orders/new'>Add another order</a>
+<a href='/vendors/@Model.Id/orders/new'>Add another order</a>
 <a href='/vendors'>View all vendors</a>

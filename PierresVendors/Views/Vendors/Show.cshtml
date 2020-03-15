@@ -8,7 +8,7 @@
 <h3>Current Orders:</h3>
 @foreach (Order order in Model["vendor"].Orders)
 {
-  <h4>@order.Description</h4>
+  <h4>@order.Date: <a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></h4>
 }
 <a href='/vendors/@Model["vendor"].Id/orders/new'>Add order</a>
 <a href='/vendors'>View all vendors</a>
