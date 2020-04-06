@@ -1,7 +1,7 @@
 # _Pierre's Bakery_
 
 #### _Epicodus C# Independent Project_, _Mar. 13, 2020_
-#### A web application for a bakery (an exersize utilizing objects in objects)
+#### A web application for a bakery (an exercise utilizing objects in objects)
 
 #### By _**Stephanie Podolak**_
 
@@ -61,7 +61,7 @@ _To view the source code of this application, open the folder in the Text Editor
 
 ### License
 
-*This application is licensed under the MIT license.*
+[MIT](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) 2020 **_Stephanie Podolak_**
 
